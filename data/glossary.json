@@ -1,0 +1,491 @@
+{
+  "description": "Vocabulary mappings from common/colloquial Malayalam (often English loanwords) to Sancharam-style literary Malayalam. Curated from 15 Sancharam episode transcripts across diverse geographies.",
+  "entries": [
+    {
+      "common_term": "airport",
+      "common_malayalam": "എയർപോർട്ട്",
+      "sancharam_term": "വിമാനത്താവളം",
+      "context": "Used for all references to airports, often alongside the English term"
+    },
+    {
+      "common_term": "international",
+      "common_malayalam": "ഇന്റർനാഷണൽ",
+      "sancharam_term": "അന്താരാഷ്ട്ര",
+      "context": "Used when describing international airports, organizations, relations"
+    },
+    {
+      "common_term": "capital city",
+      "common_malayalam": "ക്യാപിറ്റൽ",
+      "sancharam_term": "തലസ്ഥാനം",
+      "context": "Used for capital cities of countries and states"
+    },
+    {
+      "common_term": "destination",
+      "common_malayalam": "ഡെസ്റ്റിനേഷൻ",
+      "sancharam_term": "ലക്ഷ്യസ്ഥാനം",
+      "context": "Used for travel destinations"
+    },
+    {
+      "common_term": "travellers",
+      "common_malayalam": "ട്രാവലേഴ്സ്",
+      "sancharam_term": "യാത്രികർ",
+      "context": "Used for travellers, passengers at airports and transit points"
+    },
+    {
+      "common_term": "journey / travel",
+      "common_malayalam": "ട്രാവൽ / ജേർണി",
+      "sancharam_term": "സഞ്ചാരം / യാത്ര",
+      "context": "Core term of the series; 'സഞ്ചാരം' for the act of travel, 'ദീർഘയാത്ര' for long journeys"
+    },
+    {
+      "common_term": "long journey",
+      "common_malayalam": "ലോങ്ങ് ജേർണി",
+      "sancharam_term": "ദീർഘയാത്ര",
+      "context": "Used to describe extended travel spanning many hours or days"
+    },
+    {
+      "common_term": "tour / sightseeing",
+      "common_malayalam": "ടൂർ",
+      "sancharam_term": "പര്യടനം",
+      "context": "Used for organized tours and sightseeing expeditions"
+    },
+    {
+      "common_term": "vast / expansive",
+      "common_malayalam": "വെരി ലാർജ്",
+      "sancharam_term": "അതിവിശാലം",
+      "context": "Frequently used to describe airports, deserts, valleys, landscapes"
+    },
+    {
+      "common_term": "beautiful / magnificent",
+      "common_malayalam": "ബ്യൂട്ടിഫുൾ",
+      "sancharam_term": "അതിമനോഹരം",
+      "context": "Used for scenic views, buildings, natural landscapes"
+    },
+    {
+      "common_term": "transport / traffic",
+      "common_malayalam": "ട്രാൻസ്പോർട്ട് / ട്രാഫിക്",
+      "sancharam_term": "ഗതാഗതം",
+      "context": "Used for transportation systems, traffic, and transit infrastructure"
+    },
+    {
+      "common_term": "population",
+      "common_malayalam": "പോപ്പുലേഷൻ",
+      "sancharam_term": "ജനസംഖ്യ",
+      "context": "Used when citing population figures of cities, countries, regions"
+    },
+    {
+      "common_term": "per year / annually",
+      "common_malayalam": "പെർ ഇയർ",
+      "sancharam_term": "പ്രതിവർഷം",
+      "context": "Used when citing annual statistics — visitors, revenue, production"
+    },
+    {
+      "common_term": "structure / construction",
+      "common_malayalam": "സ്ട്രക്ചർ / കൺസ്ട്രക്ഷൻ",
+      "sancharam_term": "നിർമ്മിതി",
+      "context": "Used for buildings, bridges, architectural works"
+    },
+    {
+      "common_term": "man-made",
+      "common_malayalam": "മാൻ-മേഡ്",
+      "sancharam_term": "മനുഷ്യനിർമ്മിത",
+      "context": "Used for artificial islands, structures (e.g., Palm Jumeirah in Dubai)"
+    },
+    {
+      "common_term": "ancient",
+      "common_malayalam": "ഏൻഷ്യന്റ്",
+      "sancharam_term": "പുരാതന",
+      "context": "Used for ancient ruins, civilizations, monuments"
+    },
+    {
+      "common_term": "historically famous",
+      "common_malayalam": "ഹിസ്റ്റോറിക്കലി ഫേമസ്",
+      "sancharam_term": "ചരിത്രപ്രസിദ്ധ",
+      "context": "Used for historically significant places and landmarks"
+    },
+    {
+      "common_term": "famous / renowned",
+      "common_malayalam": "ഫേമസ്",
+      "sancharam_term": "പ്രശസ്തം",
+      "context": "Very frequently used to describe well-known landmarks, foods, regions"
+    },
+    {
+      "common_term": "culture",
+      "common_malayalam": "കൾച്ചർ",
+      "sancharam_term": "സംസ്കൃതി",
+      "context": "Used when discussing cultural practices, heritage, traditions"
+    },
+    {
+      "common_term": "cultural",
+      "common_malayalam": "കൾച്ചറൽ",
+      "sancharam_term": "സാംസ്കാരിക",
+      "context": "Used as adjective for cultural heritage, traditions, practices"
+    },
+    {
+      "common_term": "heritage",
+      "common_malayalam": "ഹെറിറ്റേജ്",
+      "sancharam_term": "പൈതൃകം",
+      "context": "Used for UNESCO heritage sites and cultural heritage"
+    },
+    {
+      "common_term": "memorial / monument",
+      "common_malayalam": "മെമ്മോറിയൽ / മോണ്യുമെന്റ്",
+      "sancharam_term": "സ്മാരകം",
+      "context": "Used for war memorials, historical monuments, commemorative structures"
+    },
+    {
+      "common_term": "temple / place of worship",
+      "common_malayalam": "ടെമ്പിൾ",
+      "sancharam_term": "ദേവാലയം / ആരാധനാലയം",
+      "context": "'ദേവാലയം' for Hindu temples, 'ആരാധനാലയം' as generic term for any place of worship"
+    },
+    {
+      "common_term": "palace",
+      "common_malayalam": "പാലസ്",
+      "sancharam_term": "കൊട്ടാരം",
+      "context": "Used for royal palaces and grand residences"
+    },
+    {
+      "common_term": "building / mansion",
+      "common_malayalam": "ബിൽഡിങ്",
+      "sancharam_term": "മന്ദിരം",
+      "context": "Used for grand or classical buildings, especially heritage structures"
+    },
+    {
+      "common_term": "main road / boulevard",
+      "common_malayalam": "മെയിൻ റോഡ് / ബൗളിവാർഡ്",
+      "sancharam_term": "രാജപാത",
+      "context": "Used for grand avenues like Champs-Élysées"
+    },
+    {
+      "common_term": "suburb / outskirts",
+      "common_malayalam": "സബേർബ്",
+      "sancharam_term": "നഗരപ്രാന്തം",
+      "context": "Used for city outskirts and suburban areas"
+    },
+    {
+      "common_term": "geography / terrain",
+      "common_malayalam": "ജിയോഗ്രഫി / ടെറൈൻ",
+      "sancharam_term": "ഭൂപ്രകൃതി",
+      "context": "Used when describing the physical geography of a region"
+    },
+    {
+      "common_term": "island",
+      "common_malayalam": "ഐലൻഡ്",
+      "sancharam_term": "ദ്വീപ്",
+      "context": "Very frequently used across Maldives, Dubai, and coastal episodes"
+    },
+    {
+      "common_term": "archipelago / island group",
+      "common_malayalam": "ആർക്കിപെലാഗോ",
+      "sancharam_term": "ദ്വീപസമൂഹം",
+      "context": "Used for island chains like the Maldives"
+    },
+    {
+      "common_term": "lake",
+      "common_malayalam": "ലേക്ക്",
+      "sancharam_term": "തടാകം",
+      "context": "Very frequently used (35+ occurrences) across Ethiopia, Japan, Norway episodes"
+    },
+    {
+      "common_term": "river",
+      "common_malayalam": "റിവർ",
+      "sancharam_term": "നദി",
+      "context": "Used across all episodes when describing rivers"
+    },
+    {
+      "common_term": "riverbank / riverside",
+      "common_malayalam": "റിവർ ബാങ്ക്",
+      "sancharam_term": "നദീതീരം",
+      "context": "Used when describing settlements and scenes along rivers"
+    },
+    {
+      "common_term": "ocean / sea",
+      "common_malayalam": "ഓഷ്യൻ / സീ",
+      "sancharam_term": "സമുദ്രം / മഹാസമുദ്രം",
+      "context": "'മഹാസമുദ്രം' for great oceans (Indian Ocean, Pacific), 'സമുദ്രം' for seas"
+    },
+    {
+      "common_term": "water body",
+      "common_malayalam": "വാട്ടർ ബോഡി",
+      "sancharam_term": "ജലാശയം",
+      "context": "Generic term for any body of water — lakes, reservoirs, ponds"
+    },
+    {
+      "common_term": "water-rich / fertile",
+      "common_malayalam": "വാട്ടർ-റിച്ച്",
+      "sancharam_term": "ജലസമൃദ്ധം",
+      "context": "Used to describe regions with abundant water resources"
+    },
+    {
+      "common_term": "volcano",
+      "common_malayalam": "വോൾക്കാനോ",
+      "sancharam_term": "അഗ്നിപർവ്വതം",
+      "context": "Used in Peru and Japan episodes"
+    },
+    {
+      "common_term": "mountain pass",
+      "common_malayalam": "മൗണ്ടൻ പാസ്",
+      "sancharam_term": "ചുരം",
+      "context": "Used in Bhutan episode for Dochula Pass"
+    },
+    {
+      "common_term": "valley",
+      "common_malayalam": "വാലി",
+      "sancharam_term": "താഴ്വര",
+      "context": "Used for rift valleys in Ethiopia, mountain valleys"
+    },
+    {
+      "common_term": "plain / flatland",
+      "common_malayalam": "പ്ലെയിൻ",
+      "sancharam_term": "സമതലം",
+      "context": "Used when describing flat terrain and plains"
+    },
+    {
+      "common_term": "plateau",
+      "common_malayalam": "പ്ലാറ്റോ",
+      "sancharam_term": "പീഠഭൂമി",
+      "context": "Used for elevated flat regions"
+    },
+    {
+      "common_term": "desert",
+      "common_malayalam": "ഡെസേർട്ട്",
+      "sancharam_term": "മരുഭൂമി",
+      "context": "Frequently used in Dubai and Australia episodes"
+    },
+    {
+      "common_term": "forest area",
+      "common_malayalam": "ഫോറസ്റ്റ് ഏരിയ",
+      "sancharam_term": "വനപ്രദേശം",
+      "context": "Used for forest regions across multiple episodes"
+    },
+    {
+      "common_term": "atmosphere / climate",
+      "common_malayalam": "അറ്റ്മോസ്ഫിയർ",
+      "sancharam_term": "അന്തരീക്ഷം",
+      "context": "Used when describing weather conditions and atmospheric features"
+    },
+    {
+      "common_term": "area / extent",
+      "common_malayalam": "ഏരിയ",
+      "sancharam_term": "വിസ്തൃതി",
+      "context": "Used when citing area measurements of lakes, parks, cities"
+    },
+    {
+      "common_term": "sculpture / statue",
+      "common_malayalam": "സ്കൾപ്ചർ / സ്റ്റാച്യു",
+      "sancharam_term": "ശിൽപം",
+      "context": "Used for sculptures, statues, and carved works"
+    },
+    {
+      "common_term": "rock formation",
+      "common_malayalam": "റോക്ക് ഫോർമേഷൻ",
+      "sancharam_term": "ശിലാരൂപം",
+      "context": "Used for natural rock formations (e.g., Pinnacles in Australia)"
+    },
+    {
+      "common_term": "tree",
+      "common_malayalam": "ട്രീ",
+      "sancharam_term": "വൃക്ഷം",
+      "context": "Literary term for trees, used in nature descriptions"
+    },
+    {
+      "common_term": "flower",
+      "common_malayalam": "ഫ്ലവർ",
+      "sancharam_term": "പുഷ്പം",
+      "context": "Used for flowers, flower farms, flower exports"
+    },
+    {
+      "common_term": "handicraft",
+      "common_malayalam": "ഹാൻഡിക്രാഫ്റ്റ്",
+      "sancharam_term": "കരകൗശലം",
+      "context": "Frequently used (11 occurrences) across Vietnam, Uzbekistan, Zimbabwe"
+    },
+    {
+      "common_term": "rural / village",
+      "common_malayalam": "റൂറൽ / വില്ലേജ്",
+      "sancharam_term": "ഗ്രാമീണം",
+      "context": "Used for village life, rural tourism, countryside scenes"
+    },
+    {
+      "common_term": "urban / city",
+      "common_malayalam": "അർബൻ",
+      "sancharam_term": "നാഗരികം",
+      "context": "Used for urban areas and city life"
+    },
+    {
+      "common_term": "government / administration",
+      "common_malayalam": "ഗവൺമെന്റ്",
+      "sancharam_term": "ഭരണകൂടം",
+      "context": "Used when discussing governance and administration of countries"
+    },
+    {
+      "common_term": "military / army",
+      "common_malayalam": "മിലിട്ടറി / ആർമി",
+      "sancharam_term": "സൈനികം",
+      "context": "Used in war history contexts and military discussions"
+    },
+    {
+      "common_term": "rest / relaxation",
+      "common_malayalam": "റെസ്റ്റ്",
+      "sancharam_term": "വിശ്രമം",
+      "context": "Used when the narrator takes breaks or describes leisure spots"
+    },
+    {
+      "common_term": "crystal clear (water)",
+      "common_malayalam": "ക്രിസ്റ്റൽ ക്ലിയർ",
+      "sancharam_term": "പളുങ്കുജലം / സ്ഫടികസമാനം",
+      "context": "Used for clear water in Maldives pools and ocean"
+    },
+    {
+      "common_term": "scenically beautiful",
+      "common_malayalam": "സീനിക് ബ്യൂട്ടി",
+      "sancharam_term": "പ്രകൃതിരമണീയം",
+      "context": "Used for naturally scenic locations"
+    },
+    {
+      "common_term": "biodiversity",
+      "common_malayalam": "ബയോഡൈവേഴ്സിറ്റി",
+      "sancharam_term": "ജൈവവൈവിധ്യം",
+      "context": "Used when discussing flora and fauna diversity"
+    },
+    {
+      "common_term": "ecosystem",
+      "common_malayalam": "ഇക്കോസിസ്റ്റം",
+      "sancharam_term": "ആവാസവ്യവസ്ഥ",
+      "context": "Used when discussing natural habitats and ecological systems"
+    },
+    {
+      "common_term": "flora / vegetation",
+      "common_malayalam": "വെജിറ്റേഷൻ",
+      "sancharam_term": "സസ്യജാലം",
+      "context": "Used when describing plant life in a region"
+    },
+    {
+      "common_term": "fauna / wildlife",
+      "common_malayalam": "വൈൽഡ്‌ലൈഫ്",
+      "sancharam_term": "ജന്തുജാലം",
+      "context": "Used when describing animal life in national parks and wild areas"
+    },
+    {
+      "common_term": "trade / commerce",
+      "common_malayalam": "ട്രേഡ് / കൊമേഴ്സ്",
+      "sancharam_term": "വാണിജ്യം",
+      "context": "Used when discussing trade routes, commercial districts"
+    },
+    {
+      "common_term": "natural",
+      "common_malayalam": "നാച്ചുറൽ",
+      "sancharam_term": "സ്വാഭാവികം",
+      "context": "Used to contrast natural vs man-made features"
+    },
+    {
+      "common_term": "modern / contemporary",
+      "common_malayalam": "മോഡേൺ",
+      "sancharam_term": "ആധുനികം",
+      "context": "Used for modern cities, technologies, infrastructure"
+    },
+    {
+      "common_term": "architecture",
+      "common_malayalam": "ആർക്കിടെക്ചർ",
+      "sancharam_term": "വാസ്തുവിദ്യ",
+      "context": "Used when discussing building design styles"
+    },
+    {
+      "common_term": "renovation / reconstruction",
+      "common_malayalam": "റെനവേഷൻ",
+      "sancharam_term": "പുനർനിർമ്മാണം / നവീകരണം",
+      "context": "Used for airport and building renovations"
+    },
+    {
+      "common_term": "facility / amenity",
+      "common_malayalam": "ഫെസിലിറ്റി",
+      "sancharam_term": "സൗകര്യം / സംവിധാനം",
+      "context": "Used for infrastructure facilities and amenities"
+    },
+    {
+      "common_term": "world-class",
+      "common_malayalam": "വേൾഡ്-ക്ലാസ്",
+      "sancharam_term": "ലോകോത്തര നിലവാരം",
+      "context": "Used to describe airports, hotels, and infrastructure"
+    },
+    {
+      "common_term": "grand / magnificent",
+      "common_malayalam": "ഗ്രാൻഡ്",
+      "sancharam_term": "അതിഗംഭീരം",
+      "context": "Used for imposing buildings, facilities, natural features"
+    },
+    {
+      "common_term": "export",
+      "common_malayalam": "എക്സ്പോർട്ട്",
+      "sancharam_term": "കയറ്റുമതി",
+      "context": "Used in discussions about trade, especially flower exports in Ethiopia"
+    },
+    {
+      "common_term": "safety / security",
+      "common_malayalam": "സേഫ്റ്റി / സെക്യൂരിറ്റി",
+      "sancharam_term": "സുരക്ഷ / മുൻകരുതൽ",
+      "context": "Used for safety precautions at pools, tourist sites"
+    },
+    {
+      "common_term": "atmosphere (mood)",
+      "common_malayalam": "മൂഡ്",
+      "sancharam_term": "അന്തരീക്ഷം",
+      "context": "Used both for literal atmosphere and figurative mood of a place"
+    },
+    {
+      "common_term": "golden",
+      "common_malayalam": "ഗോൾഡൻ",
+      "sancharam_term": "സുവർണ",
+      "context": "Used for golden deserts, golden-hued landscapes"
+    },
+    {
+      "common_term": "industrial / industry",
+      "common_malayalam": "ഇൻഡസ്ട്രി",
+      "sancharam_term": "വ്യവസായം",
+      "context": "Used when discussing local industries and economic activities"
+    },
+    {
+      "common_term": "independence / freedom",
+      "common_malayalam": "ഇൻഡിപെൻഡൻസ്",
+      "sancharam_term": "സ്വാതന്ത്ര്യം",
+      "context": "Used in historical and political discussions"
+    },
+    {
+      "common_term": "adventure",
+      "common_malayalam": "അഡ്വഞ്ചർ",
+      "sancharam_term": "സാഹസികം",
+      "context": "Used for adventurous activities and daring travel"
+    },
+    {
+      "common_term": "fertile / lush",
+      "common_malayalam": "ഫെർട്ടൈൽ",
+      "sancharam_term": "ഫലഭൂയിഷ്ഠം",
+      "context": "Used for agriculturally rich and green regions"
+    },
+    {
+      "common_term": "enthusiasm / excitement",
+      "common_malayalam": "എക്സൈറ്റ്മെന്റ്",
+      "sancharam_term": "ആവേശം",
+      "context": "Used to express the narrator's excitement about new destinations"
+    },
+    {
+      "common_term": "disappointment",
+      "common_malayalam": "ഡിസപ്പോയിന്റ്മെന്റ്",
+      "sancharam_term": "നിരാശ",
+      "context": "Used when plans fail or expected sights are missed"
+    },
+    {
+      "common_term": "curiosity",
+      "common_malayalam": "ക്യൂരിയോസിറ്റി",
+      "sancharam_term": "കൗതുകം",
+      "context": "Used when describing interesting or surprising sights"
+    },
+    {
+      "common_term": "abundance / plenty",
+      "common_malayalam": "അബണ്ടൻസ്",
+      "sancharam_term": "ബാഹുല്യം",
+      "context": "Used for abundance of tourists, resources, or features"
+    }
+  ]
+}
