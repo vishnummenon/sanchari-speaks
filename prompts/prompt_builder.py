@@ -50,32 +50,21 @@ def _load_examples() -> str:
     return "\n".join(parts)
 
 
-def _build_user_message(input_text: str, input_language: str) -> str:
-    if input_language == "ml":
-        instruction = (
-            "Transform the following Malayalam text into Sancharam narration style. "
-            "Replace English loanwords with Malayalam/Sanskrit equivalents from the glossary. "
-            "Elevate the register to formal literary Malayalam with the contemplative, "
-            "atmospheric quality of the Sancharam narrator."
-        )
-    else:
-        instruction = (
-            "Translate and transform the following English text into Sancharam-style Malayalam. "
-            "Use Malayalam/Sanskrit vocabulary from the glossary — do not transliterate English terms. "
-            "Write in the formal literary register with the contemplative, "
-            "first-person narration style of Sancharam."
-        )
+def _build_user_message(input_text: str) -> str:
+    instruction = (
+        "Transform the following text into Sancharam narration style. "
+        "The input may be in Malayalam script, English, or Manglish (Malayalam in Latin script). "
+        "Detect the language yourself and apply the appropriate transformation rules. "
+        "Use vocabulary from the glossary. Output only Sancharam-style Malayalam."
+    )
     return f"{instruction}\n\n---\n\n{input_text}"
 
 
-def build_prompt(
-    input_text: str, input_language: str
-) -> tuple[str, list[dict[str, str]]]:
+def build_prompt(input_text: str) -> tuple[str, list[dict[str, str]]]:
     """Assemble the full prompt for Sancharam style transfer.
 
     Args:
-        input_text: The text to transform.
-        input_language: "ml" for Malayalam, "en" for English.
+        input_text: The text to transform (Malayalam, English, or Manglish).
 
     Returns:
         A tuple of (system_prompt, messages) compatible with the OpenAI
@@ -90,6 +79,6 @@ def build_prompt(
     ]
     system_prompt = "\n".join(system_parts)
 
-    messages = [{"role": "user", "content": _build_user_message(input_text, input_language)}]
+    messages = [{"role": "user", "content": _build_user_message(input_text)}]
 
     return system_prompt, messages

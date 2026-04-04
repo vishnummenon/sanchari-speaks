@@ -5,18 +5,14 @@ The system prompt (`prompts/system_prompt.md`) SHALL characterise the Sancharam 
 
 #### Scenario: System prompt file exists and contains style guidance
 - **WHEN** the file `prompts/system_prompt.md` is read
-- **THEN** it contains sections covering vocabulary preference, register/tone, sentence patterns, and transformation rules for both Malayalam and English input
+- **THEN** it contains sections covering vocabulary preference, register/tone, sentence patterns, input language handling (Malayalam, English, and Manglish), and transformation rules for each input type
 
 ### Requirement: Prompt builder assembles full prompt from modular parts
-The prompt builder (`prompts/prompt_builder.py`) SHALL export a `build_prompt(input_text: str, input_language: str) -> tuple[str, list[dict]]` function that assembles the OpenAI-compatible messages array from the system prompt, glossary, and few-shot examples.
+The prompt builder (`prompts/prompt_builder.py`) SHALL export a `build_prompt(input_text: str) -> tuple[str, list[dict]]` function that assembles the OpenAI-compatible messages array from the system prompt, glossary, and few-shot examples. Language detection is delegated to the LLM via the system prompt.
 
-#### Scenario: Assemble prompt for Malayalam input
-- **WHEN** `build_prompt` is called with Malayalam text and `input_language="ml"`
-- **THEN** it returns a messages structure containing: the system prompt content, the glossary entries formatted as vocabulary guidance, relevant few-shot examples, and the user's input text with Malayalam-specific transformation instructions
-
-#### Scenario: Assemble prompt for English input
-- **WHEN** `build_prompt` is called with English text and `input_language="en"`
-- **THEN** it returns a messages structure containing: the system prompt content, the glossary entries, relevant few-shot examples, and the user's input text with instructions to translate and transform into Sancharam-style Malayalam
+#### Scenario: Assemble prompt for any input
+- **WHEN** `build_prompt` is called with input text (Malayalam, English, or Manglish)
+- **THEN** it returns a messages structure containing: the system prompt content (which includes language detection instructions), the glossary entries formatted as vocabulary guidance, relevant few-shot examples, and the user's input text with a unified transformation instruction
 
 #### Scenario: Glossary is loaded from data directory
 - **WHEN** the prompt builder assembles a prompt

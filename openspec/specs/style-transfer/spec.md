@@ -16,15 +16,19 @@ The transform script (`scripts/transform.py`) SHALL accept input text via a posi
 - **THEN** it exits with an error message indicating that input text is required
 
 ### Requirement: Auto-detect input language
-The script SHALL auto-detect whether the input is Malayalam or English based on Unicode character analysis and adjust the transformation prompt accordingly.
+The system SHALL support three input forms — Malayalam script, English, and Manglish (Malayalam in Latin script). Language detection is delegated to the LLM via the system prompt rather than client-side heuristics.
 
-#### Scenario: Malayalam input detected
-- **WHEN** the input text contains >30% Malayalam Unicode characters (U+0D00–U+0D7F)
-- **THEN** the prompt instructs the model to transform the Malayalam text into Sancharam-style Malayalam
+#### Scenario: Malayalam script input
+- **WHEN** the input text is written in Malayalam script (e.g., "ഞാൻ എയർപോർട്ടിൽ എത്തി")
+- **THEN** the LLM detects it as Malayalam and transforms it into Sancharam-style Malayalam
 
-#### Scenario: English input detected
-- **WHEN** the input text contains ≤30% Malayalam Unicode characters
-- **THEN** the prompt instructs the model to translate the English text into Sancharam-style Malayalam
+#### Scenario: English input
+- **WHEN** the input text is written in English (e.g., "I arrived at the airport")
+- **THEN** the LLM detects it as English and translates it into Sancharam-style Malayalam
+
+#### Scenario: Manglish input
+- **WHEN** the input text is Malayalam written in Latin script (e.g., "njan airport-il ethi")
+- **THEN** the LLM detects it as Manglish, interprets the Malayalam meaning, and transforms it into Sancharam-style Malayalam
 
 ### Requirement: Glossary verification in post-processing
 After receiving the LLM response, the script SHALL check which glossary terms from `data/glossary.json` could have been applied based on the input text, and report any missing substitutions.

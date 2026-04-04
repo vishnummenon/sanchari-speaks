@@ -29,19 +29,6 @@ DEFAULT_MODEL = "anthropic/claude-sonnet-4-6"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
-def detect_language(text: str) -> str:
-    """Detect whether text is Malayalam or English.
-
-    Returns "ml" if >30% of non-whitespace characters are in the
-    Malayalam Unicode block (U+0D00-U+0D7F), otherwise "en".
-    """
-    non_ws = [c for c in text if not c.isspace()]
-    if not non_ws:
-        return "en"
-    malayalam_count = sum(1 for c in non_ws if "\u0d00" <= c <= "\u0d7f")
-    return "ml" if malayalam_count / len(non_ws) > 0.30 else "en"
-
-
 def load_glossary() -> list[dict]:
     data = json.loads(GLOSSARY_PATH.read_text(encoding="utf-8"))
     return data.get("entries", data) if isinstance(data, dict) else data
@@ -124,9 +111,8 @@ def main() -> None:
         )
         sys.exit(1)
 
-    # Detect language and build prompt
-    language = detect_language(input_text)
-    system_prompt, messages = build_prompt(input_text, language)
+    # Build prompt (language detection is handled by the LLM)
+    system_prompt, messages = build_prompt(input_text)
 
     if args.dry_run:
         print("=== SYSTEM PROMPT ===")
@@ -135,7 +121,7 @@ def main() -> None:
         print("=== USER MESSAGE ===")
         print(messages[0]["content"])
         print()
-        print(f"=== MODEL: {args.model} | LANGUAGE: {language} ===")
+        print(f"=== MODEL: {args.model} ===")
         return
 
     # Call OpenRouter
