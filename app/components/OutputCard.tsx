@@ -9,7 +9,6 @@ interface OutputCardProps {
 
 export default function OutputCard({ text }: OutputCardProps) {
   const [copyLabel, setCopyLabel] = useState("Copy Text");
-  const [toast, setToast] = useState<string | null>(null);
 
   async function handleCopy() {
     try {
@@ -20,11 +19,6 @@ export default function OutputCard({ text }: OutputCardProps) {
       setCopyLabel("Copy failed");
       setTimeout(() => setCopyLabel("Copy Text"), 2000);
     }
-  }
-
-  function handleShare() {
-    setToast("Coming soon");
-    setTimeout(() => setToast(null), 2000);
   }
 
   return (
@@ -38,12 +32,7 @@ export default function OutputCard({ text }: OutputCardProps) {
           <span className="material-symbols-outlined">content_copy</span>
           {copyLabel}
         </button>
-        <button className={styles.actionBtn} onClick={handleShare}>
-          <span className="material-symbols-outlined">image</span>
-          Share as Image
-        </button>
       </div>
-      {toast && <div className={styles.toast}>{toast}</div>}
     </div>
   );
 }

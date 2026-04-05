@@ -10,6 +10,12 @@ export default function TranslatePanel() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  function handleClear() {
+    setInput("");
+    setOutput(null);
+    setError(null);
+  }
+
   async function handleTranslate() {
     const text = input.trim();
     if (!text) return;
@@ -76,24 +82,36 @@ export default function TranslatePanel() {
           )}
         </div>
 
-        <button
-          className={styles.translateBtn}
-          onClick={handleTranslate}
-          disabled={loading || !input.trim()}
-          aria-busy={loading}
-        >
-          {loading ? (
-            <>
-              <span className={styles.spinner} aria-hidden="true" />
-              Translating…
-            </>
-          ) : (
-            <>
-              <span className="material-symbols-outlined">auto_awesome</span>
-              Translate to Sancharam
-            </>
+        <div className={styles.buttonRow}>
+          <button
+            className={styles.translateBtn}
+            onClick={handleTranslate}
+            disabled={loading || !input.trim()}
+            aria-busy={loading}
+          >
+            {loading ? (
+              <>
+                <span className={styles.spinner} aria-hidden="true" />
+                Translating…
+              </>
+            ) : (
+              <>
+                <span className="material-symbols-outlined">auto_awesome</span>
+                Translate to Sancharam
+              </>
+            )}
+          </button>
+          {input.trim() && !loading && (
+            <button
+              className={styles.clearBtn}
+              onClick={handleClear}
+              aria-label="Clear input"
+            >
+              <span className="material-symbols-outlined">close</span>
+              Clear
+            </button>
           )}
-        </button>
+        </div>
 
         {loading && (
           <div className={styles.skeleton} aria-hidden="true">

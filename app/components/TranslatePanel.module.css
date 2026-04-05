@@ -111,6 +111,35 @@
   font-size: 1.1em;
 }
 
+.buttonRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.clearBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: var(--text-body-sm);
+  font-family: var(--font-functional);
+  color: var(--color-on-surface-var);
+  background-color: var(--color-surface-high);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.clearBtn:hover {
+  background-color: var(--color-surface-dim);
+  color: var(--color-on-surface);
+}
+
+.clearBtn .material-symbols-outlined {
+  font-size: 1rem;
+}
+
 /* Loading spinner */
 .spinner {
   display: inline-block;
