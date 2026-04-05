@@ -25,7 +25,7 @@ sys.path.insert(0, str(ROOT_DIR / "prompts"))
 from prompt_builder import build_prompt  # noqa: E402
 
 GLOSSARY_PATH = ROOT_DIR / "data" / "glossary.json"
-DEFAULT_MODEL = "anthropic/claude-sonnet-4-6"
+DEFAULT_MODEL = "google/gemini-2.5-flash-preview"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
