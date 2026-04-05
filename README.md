@@ -3,6 +3,8 @@
 **നിങ്ങളുടെ വാക്കുകൾ, സഞ്ചാരത്തിന്റെ ശൈലിയിൽ**
 *Your words, in the style of Sancharam.*
 
+**Live:** [sanchari-speaks.vercel.app](https://sanchari-speaks.vercel.app/) — deployed on Vercel
+
 Sanchari Speaks transforms everyday Malayalam, English, or Manglish text into the distinctive literary narration style of *Sancharam* — Kerala's iconic travel documentary series. Type a plain observation; receive the kind of elevated, contemplative prose that made Sancharam a cultural phenomenon.
 
 ---
@@ -118,6 +120,22 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run build
 npm start
 ```
+
+### Deploying to Vercel
+
+The project is deployed at [sanchari-speaks.vercel.app](https://sanchari-speaks.vercel.app/). Vercel auto-detects Next.js — no config file needed.
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+Or connect the GitHub repo in the Vercel dashboard for automatic deployments on every push.
+
+Set `OPENROUTER_API_KEY` in **Project Settings → Environment Variables** in the Vercel dashboard.
 
 ### Translate API
 
