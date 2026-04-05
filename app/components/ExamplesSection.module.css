@@ -1,0 +1,115 @@
+.section {
+  padding: var(--space-3xl) 0;
+  background-color: var(--color-surface-low);
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 56ch;
+}
+
+.eyebrow {
+  font-size: var(--text-label);
+  font-family: var(--font-functional);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.heading {
+  font-family: var(--font-narrative);
+  font-size: var(--text-headline);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.subheading {
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-var);
+  line-height: 1.6;
+}
+
+/* 2-col grid on desktop */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+/* Postcard-style card — no border, tonal bg, asymmetric padding */
+.card {
+  background-color: var(--color-surface-highest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg) var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  box-shadow: 0 8px 32px rgba(28, 28, 21, 0.04);
+}
+
+.label {
+  display: block;
+  font-size: var(--text-label);
+  font-family: var(--font-functional);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-outline);
+  margin-bottom: var(--space-xs);
+}
+
+.rawBlock {
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-secondary-fixed);
+}
+
+.rawText {
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-var);
+  line-height: 1.6;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  opacity: 0.6;
+  padding-left: var(--space-md);
+}
+
+.arrow .material-symbols-outlined {
+  font-size: 1.2rem;
+}
+
+.sanchariBlock {
+  padding-left: var(--space-md);
+}
+
+.sanchariText {
+  font-family: var(--font-narrative);
+  font-size: var(--text-body);
+  color: var(--color-on-surface);
+  line-height: 1.8;
+}
+
+/* Mobile: single column */
+@media (max-width: 767px) {
+  .inner {
+    padding: 0 var(--space-md);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

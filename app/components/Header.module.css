@@ -1,0 +1,94 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(252, 249, 238, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(194, 201, 187, 0.2);
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: var(--font-narrative);
+  font-size: var(--text-title);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: var(--text-label);
+  color: var(--color-on-surface-var);
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.navLink {
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-var);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.exploreBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-surface-var);
+  padding: var(--space-sm);
+  border-radius: var(--radius-full);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.exploreBtn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-surface-high);
+}
+
+/* Mobile: hide nav links, show explore icon */
+@media (max-width: 767px) {
+  .inner {
+    padding: 0 var(--space-md);
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .exploreBtn {
+    display: flex;
+  }
+}

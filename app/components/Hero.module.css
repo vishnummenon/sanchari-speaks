@@ -1,0 +1,117 @@
+.hero {
+  padding-top: 64px; /* header height */
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-surface-low);
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.eyebrow {
+  font-size: var(--text-label);
+  font-family: var(--font-functional);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.headline {
+  font-family: var(--font-narrative);
+  font-size: clamp(2.5rem, 5vw, var(--text-display));
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  font-size: var(--text-body);
+  color: var(--color-on-surface-var);
+  line-height: 1.7;
+  max-width: 42ch;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+  color: var(--color-on-primary);
+  font-family: var(--font-functional);
+  font-size: var(--text-body);
+  font-weight: 600;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  width: fit-content;
+  box-shadow: 0 8px 32px rgba(21, 66, 18, 0.18);
+}
+
+.cta:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.cta .material-symbols-outlined {
+  font-size: 1.1em;
+}
+
+.imageWrap {
+  position: relative;
+  height: 520px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transform: translateY(16px) rotate(1deg);
+  box-shadow: 0 32px 64px rgba(28, 28, 21, 0.12);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(141, 50, 32, 0.08),
+    transparent 60%
+  );
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .inner {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-md);
+    gap: var(--space-xl);
+  }
+
+  .imageWrap {
+    height: 260px;
+    transform: none;
+    order: -1;
+  }
+
+  .headline {
+    font-size: 2.2rem;
+  }
+}
